@@ -1,4 +1,129 @@
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+  border-color: black;
+  text-align: left;
+  background-color: #a3c2a3;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 h1 {
+  text-align: right;
+  color: black;
+  font-size: 25px;
+  font-weight: 100;
+  margin: 0;
+  line-height: 25px;
+  display: block;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.temperature {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+  box-sizing: border-box;
+  text-align: left;
+  text-size-adjust: 100%;
+}
+.unit {
+  position: relative;
+  top: -20px;
+  text-align: left;
+  line-height: 24px;
+  font-weight: 400;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.weather-icon {
+  height: 64px;
+  width: 64px;
+  margin-right: 10px;
+}
+.float-left {
+  float: left !important;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+ul.weather-today {
+  display: list-item;
+  text-align: right;
+}
+.weather-today li {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+ul.parameters {
+  display: list-item;
   text-align: center;
-  color: yellowgreen;
+}
+.weather-days {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.weather-days li {
+  display: inline-block;
+  width: 16.66%;
+  text-align: center;
+}
+
+.weather-days li .day {
+  font-weight: bold;
+}
+
+.weather-days li .temps {
+  font-size: 0.8em;
+  margin-top: 15px;
+  text-align: center;
+  display: block;
+}
+
+ul {
+  margin: 0 0 20px;
+
+  padding: 0;
+  display: block;
+  list-style-type: disc;
+  padding-inline-start: 40px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  box-sizing: border-box;
+}
+li {
+  color: #70757a;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 1px;
+  height: 20px;
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+  font-size: large;
 }
