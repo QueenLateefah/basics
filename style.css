@@ -1,129 +1,102 @@
 body {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 2;
-  border-color: black;
-  text-align: left;
-  background-color: #a3c2a3;
+  font-family: "Kalam", cursive;
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(
+    65deg,
+    #749784,
+    #abb3b3,
+    #a2a8ae,
+    #1e6d65,
+    #155a57,
+    #0d6958,
+    #575d5e,
+    #11231d,
+    #084245,
+    #0e2931,
+    #303f40,
+    #7f8888,
+    #06564e
+  );
+  background-repeat: no-repeat;
 }
+
 .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-h1 {
-  text-align: right;
-  color: black;
-  font-size: 25px;
-  font-weight: 100;
-  margin: 0;
-  line-height: 25px;
-  display: block;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.temperature {
-  color: rgb(33, 33, 33);
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 1;
-  box-sizing: border-box;
-  text-align: left;
-  text-size-adjust: 100%;
-}
-.unit {
-  position: relative;
-  top: -20px;
-  text-align: left;
-  line-height: 24px;
-  font-weight: 400;
-  text-size-adjust: 100%;
-  box-sizing: border-box;
-}
-
-.weather-app {
-  border: 1px solid #dadde1;
-  padding: 15px;
-  margin: 20px auto;
-  max-width: 600px;
+  background-color: #94a2a9;
   border-radius: 10px;
-  box-sizing: border-box;
 }
-.weather-icon {
-  height: 64px;
-  width: 64px;
-  margin-right: 10px;
-}
-.float-left {
-  float: left !important;
-}
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-ul.weather-today {
-  display: list-item;
-  text-align: right;
-}
-.weather-today li {
-  font-size: 20px;
-  font-weight: 400;
-  color: black;
-}
-ul.parameters {
-  display: list-item;
-  text-align: center;
-}
-.weather-days {
-  width: 100%;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.app {
+  max-width: 700px;
+  margin: 60px auto;
 }
 
-.weather-days li {
-  display: inline-block;
-  width: 16.66%;
-  text-align: center;
-}
-
-.weather-days li .day {
+.btn:hover {
+  color: #0d8a6d;
+  background-color: #fff;
   font-weight: bold;
+  border: 1px solid hsl(156, 90%, 44%);
 }
 
-.weather-days li .temps {
-  font-size: 0.8em;
-  margin-top: 15px;
-  text-align: center;
-  display: block;
+#city {
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
-ul {
-  margin: 0 0 20px;
-
-  padding: 0;
-  display: block;
-  list-style-type: disc;
-  padding-inline-start: 40px;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  box-sizing: border-box;
+#description {
+  text-transform: capitalize;
 }
-li {
-  color: #70757a;
-  font-weight: 100;
+
+.weather-param {
+  color: #0b5ed7;
+}
+
+.main-temp-icon {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(15%) saturate(4954%)
+    hue-rotate(192deg) brightness(107%) contrast(89%);
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+
+.forecast-temp-icon {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(15%) saturate(4954%)
+    hue-rotate(192deg) brightness(107%) contrast(89%);
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+}
+
+.main-temp-text {
+  display: inline-block;
+  font-size: 3.4rem;
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.temp-unit {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.forecast-day {
+  background-color: #ecfdfe;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.min {
+  color: rgba(0, 0, 0, 0.533);
+}
+
+.github {
+  text-decoration: none;
+}
+
+.github-link {
   font-size: 15px;
-  line-height: 1px;
-  height: 20px;
-  list-style: none;
-  padding: 0;
-  box-sizing: border-box;
-}
-h2 {
-  text-align: center;
-  font-size: large;
 }
